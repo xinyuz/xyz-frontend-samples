@@ -1,5 +1,5 @@
 # Frontend Samples
-A collection of various frontend samples.
+A collection of various interesting frontend samples.
 
 - scroll snap
 - css drops
