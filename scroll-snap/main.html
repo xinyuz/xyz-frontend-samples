@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatable" />
+  <meta name="viewport" content="width=device-width" />
+  <title>CSS Scroll Snap Sample</title>
+  <style>
+    body {
+      font-size: xx-large;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+
+    section:nth-child(4n+1) {
+      background-color: royalblue;
+    }
+
+    section:nth-child(4n+2) {
+      background-color: lightblue;
+    }
+
+    section:nth-child(4n+3) {
+      background-color: lightslategray;
+    }
+
+    section:nth-child(4n+4) {
+      background-color: rgb(194, 152, 114);
+    }
+
+    .container {
+      /* display: flex; */
+      scroll-snap-type: y mandatory;
+      overflow: scroll;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    section {
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+      /* flex-shrink: 0; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section>内容1</section>
+    <section>内容2</section>
+    <section>内容3</section>
+    <section>内容4</section>
+  </div>
+</body>
+
+</html>
